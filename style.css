@@ -82,4 +82,5 @@ html, body {
 
 .container p {
     color: var(--font-color);
+    text-align: center;
 }
