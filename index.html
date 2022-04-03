@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Theme Switcher </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="toggle" onclick="toggleTheme()" class="toggle">
+        <label for="toggle"></label>
+
+        <p>
+            Hi, this is my theme switcher with a toggle.
+        </p>
+    </div>
+
+    <script>
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
+        })();
+    </script>
+</body>
+</html>
