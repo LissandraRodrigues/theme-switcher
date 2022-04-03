@@ -3,7 +3,7 @@
 }
 
 .toggle + label {
-    width: 42px;
+    width: 42px; 
     height: 20px;
     background: lightgrey; 
     display: block;
@@ -12,6 +12,10 @@
     padding: 2px;
     transition: 200ms;
     cursor: pointer;
+    background-image: url(./moon.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20px;
 }
 
 .toggle + label:before {
@@ -29,7 +33,10 @@
 }
 
 .toggle:checked + label {
-    background: blue;
+    background-image: url(./sun.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
 }
 
 .toggle:checked + label:before {
