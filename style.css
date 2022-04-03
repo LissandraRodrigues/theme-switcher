@@ -1,3 +1,14 @@
+:root {
+	--label: #111;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .toggle {
     display: none;
 }
@@ -5,10 +16,10 @@
 .toggle + label {
     width: 42px; 
     height: 20px;
-    background: lightgrey; 
+    background: var(--label); 
     display: block;
     position: relative;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 2px;
     transition: 200ms;
     cursor: pointer;
@@ -16,6 +27,7 @@
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 20px;
+    background-position-x: 24px;
 }
 
 .toggle + label:before {
@@ -37,6 +49,7 @@
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
+    background-position-x: 2px;
 }
 
 .toggle:checked + label:before {
@@ -45,24 +58,15 @@
     box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
 } 
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
 .theme-light {
     --color-primary: #0060df;
     --color-secondary: #fbfbfe;
-    --color-accent: #fd6f53;
     --font-color: #000000;
 }
 
 .theme-dark {
     --color-primary: #17ed90;
     --color-secondary: #243133;
-    --color-accent: #12cdea;
     --font-color: #ffffff;
 }
 
@@ -78,11 +82,4 @@ html, body {
 
 .container p {
     color: var(--font-color);
-}
-.container button {
-    color: var(--font-color);
-    background: var(--color-primary);
-    padding: 10px 20px;
-    border: 0;
-    border-radius: 5px;
 }
