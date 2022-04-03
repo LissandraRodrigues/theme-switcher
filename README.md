@@ -1,6 +1,6 @@
 # Theme Switcher
 
-In this project I was challenged to make a Theme Switcher using Javascript, HTML and CSS. 
+In this project I was challenged to make a Theme Switcher using Javascript, HTML and CSS.
 
 See the <a href="https://lissandrarodrigues.github.io/theme-switcher/"> deployment</a>.
 
