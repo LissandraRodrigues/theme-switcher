@@ -23,7 +23,7 @@ html, body {
     padding: 2px;
     transition: 200ms;
     cursor: pointer;
-    background-image: url(./assets/moon.png);
+    background-image: url(./assets/sun.png);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -45,7 +45,7 @@ html, body {
 }
 
 .toggle:checked + label {
-    background-image: url(./assets/sun.png);
+    background-image: url(./assets/moon.png);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
